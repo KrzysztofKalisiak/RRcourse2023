@@ -1,0 +1,31 @@
+k_kalisiak2@instancja1rr:~$ pwd
+/home/k_kalisiak2
+k_kalisiak2@instancja1rr:~$ touch file.txt
+k_kalisiak2@instancja1rr:~$ ls -l
+total 0
+-rw-rw-r-- 1 k_kalisiak2 k_kalisiak2 0 Apr 13 13:45 file.txt
+k_kalisiak2@instancja1rr:~$ touch test
+k_kalisiak2@instancja1rr:~$ ls -l
+total 0
+-rw-rw-r-- 1 k_kalisiak2 k_kalisiak2 0 Apr 13 13:45 file.txt
+-rw-rw-r-- 1 k_kalisiak2 k_kalisiak2 0 Apr 13 13:47 test
+k_kalisiak2@instancja1rr:~$ cd ../ubuntu/
+k_kalisiak2@instancja1rr:/home/ubuntu$ mkdir dirname1
+mkdir: cannot create directory ‘dirname1’: Permission denied
+k_kalisiak2@instancja1rr:/home/ubuntu$ sudo mkdir dirname1
+k_kalisiak2@instancja1rr:/home/ubuntu$ ls -l
+total 4
+drwxr-xr-x 2 root root 4096 Apr 13 13:49 dirname1
+k_kalisiak2@instancja1rr:/home/ubuntu$ sudo rm -rf
+k_kalisiak2@instancja1rr:/home/ubuntu$ ls -l
+total 4
+drwxr-xr-x 2 root root 4096 Apr 13 13:49 dirname1
+k_kalisiak2@instancja1rr:/home/ubuntu$ ^C
+k_kalisiak2@instancja1rr:/home/ubuntu$ ls -l
+total 4
+drwxr-xr-x 2 root root 4096 Apr 13 13:49 dirname1
+k_kalisiak2@instancja1rr:/home/ubuntu$ cd root
+-bash: cd: root: No such file or directory
+k_kalisiak2@instancja1rr:/home/ubuntu$ cd /root
+-bash: cd: /root: Permission denied
+k_kalisiak2@instancja1rr:/home/ubuntu$ 
