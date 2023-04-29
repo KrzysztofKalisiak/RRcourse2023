@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 hello 409879 :)
+=======
+add some textsomething
+>>>>>>> 5bbd1b69e57589b16421df305a4390b384a659a6
